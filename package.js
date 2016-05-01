@@ -1,6 +1,6 @@
 Package.describe({
   name: 'thereactivestack:blazetoreact',
-  version: '1.0.0',
+  version: '1.0.1',
   summary: 'Transform a Blaze template into a React.js component while keeping the reactivity',
   git: 'https://github.com/thereactivestack/meteor-blazetoreact.git',
   documentation: 'README.md'
