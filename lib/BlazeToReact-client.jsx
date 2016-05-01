@@ -1,4 +1,7 @@
-BlazeToReact = function(name, options) {
+import React from 'react';
+import Blaze from 'meteor/blaze';
+
+export default function BlazeToReact(name, options) {
   if (!options) {
     options = {};
   }
@@ -25,7 +28,7 @@ BlazeToReact = function(name, options) {
       return React.cloneElement(options.container, {
         ref: function(el) {
           if (el && !this.blazeView) {
-            this.blazeView = Blaze.renderWithData(Template[name], this.props, el);
+            this.blazeView = Blaze.renderWithData(window.Template[name], this.props, el);
           }
         }.bind(this)
       });

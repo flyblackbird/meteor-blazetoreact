@@ -1,17 +1,17 @@
 Package.describe({
   name: 'thereactivestack:blazetoreact',
-  version: '0.1.5',
+  version: '1.0.0',
   summary: 'Transform a Blaze template into a React.js component while keeping the reactivity',
   git: 'https://github.com/thereactivestack/meteor-blazetoreact.git',
   documentation: 'README.md'
 });
 
 Package.onUse(function(api) {
-  api.use(['react@0.14.1']);
+  api.versionsFrom('1.3');
+
+  api.use(['tmeasday:check-npm-versions@0.2.0', 'jsx@0.2.3']);
   api.use(['blaze@2.1.0'], 'client');
 
-  api.add_files(['lib/BlazeToReact-client.jsx'], ['client']);
-  api.add_files(['lib/BlazeToReact-server.jsx'], ['server']);
-
   api.export('BlazeToReact');
+  api.mainModule('lib/BlazeToReact.jsx');
 });
