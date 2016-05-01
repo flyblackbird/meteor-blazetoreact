@@ -1,6 +1,6 @@
 import React from 'react';
 import Blaze from 'meteor/blaze';
-import Template from 'blaze-html-templates';
+import Template from 'meteor/blaze-html-templates';
 
 export default function BlazeToReact(name, options) {
   if (!options) {
