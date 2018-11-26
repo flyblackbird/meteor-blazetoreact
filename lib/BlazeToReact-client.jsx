@@ -14,15 +14,15 @@ export default function BlazeToReact(name, options) {
     shouldComponentUpdate() {
       // Blaze has the full control once started
       return false;
-    },
+    }
 
     componentWillUnmount() {
       Blaze.remove(this.blazeView);
-    },
+    }
 
     componentWillReceiveProps(props) {
       this.blazeView.dataVar.set(props);
-    },
+    }
 
     render() {
       return React.cloneElement(options.container, {

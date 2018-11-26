@@ -1,7 +1,7 @@
 import { checkNpmVersions } from 'meteor/tmeasday:check-npm-versions';
 
 checkNpmVersions({
-  react: '15.x'
+  react: '16.x'
 }, 'thereactivestack:blazetoreact');
 
 if (Meteor.isServer) {
