@@ -4,7 +4,7 @@
 Transform a Blaze template into a React.js component while keeping the reactivity
 
 ## Install
-`meteor add thereactivestack:blazetoreact`
+`meteor add meteorblackbird:blazetoreact`
 
 ## Usage
 ```javascript
