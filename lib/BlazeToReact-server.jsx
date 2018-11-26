@@ -18,9 +18,9 @@ export default function BlazeToReact(name, options) {
     options.container = <span />;
   }
 
-  return React.createClass({
+  return class Component extends React.Component {
     render() {
       return options.container;
     }
-  });
+  };
 };

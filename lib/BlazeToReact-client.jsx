@@ -10,7 +10,7 @@ export default function BlazeToReact(name, options) {
     options.container = <span />;
   }
 
-  return React.createClass({
+  return class Component extends React.Component {
     shouldComponentUpdate() {
       // Blaze has the full control once started
       return false;
@@ -33,5 +33,5 @@ export default function BlazeToReact(name, options) {
         }.bind(this)
       });
     }
-  });
+  };
 };
